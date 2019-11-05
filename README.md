@@ -1,60 +1,68 @@
-# [Start Bootstrap - Simple Sidebar](https://startbootstrap.com/template-overviews/simple-sidebar/)
+# VERIFICA TPSI: AWS, HTML5, deploy
 
-[Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/) is an off canvas sidebar navigation template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+Benvenuti alla verifica scritta di TPSI. Buon lavoro!
 
-## Preview
+## Esecuzione del compito
+Il compito è diviso in tre fasi:
+1. avvio di una macchina EC2 su AWS
+1. modifica di una pagina web in locale
+1. deploy della pagina web sull'istanza EC2
 
-[![Simple Sidebar Preview](https://startbootstrap.com/assets/img/templates/simple-sidebar.jpg)](https://blackrockdigital.github.io/startbootstrap-simple-sidebar/)
+Operazioni preliminari:
+- accedete con il vostro account personale a GitHub (**non sbagliate password!**)
+- fate il fork di questo progetto, ma **attenzione**: se vi viene chiesto, fate il fork sul vostro account personale e non sull'organizzazione del progetto di classe
+- copiate l'URL del **vostro** progetto
+- aprite Visual Studio Code
+- fate il clone del progetto
+- premete sul pulsante "Go Live" nella barra blu in basso
+- a questo punto avete la pagina di riferimento aperta sul vostro browser e potete cominciare lo sviluppo
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-simple-sidebar/)**
+Accesso ad AWS:
+- accedete alla [pagina di login](https://www.awseducate.com/signin/SiteLogin) di AWS Educate
+- quando create una nuova istanza, **create una nuova chiave** con il nome **cognome-verifica**; questa chiave dovete metterla sotto revisione su github in modo che io possa accedere alla vostra istanza!
+- per le operazioni di configurazione potete usare gli appunti a [questo](https://github.com/wbigger/tpsi-5y/) indirizzo
 
-## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-simple-sidebar/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-simple-sidebar.svg)](https://www.npmjs.com/package/startbootstrap-simple-sidebar)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-simple-sidebar.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-simple-sidebar)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-simple-sidebar/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-simple-sidebar)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-simple-sidebar/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-simple-sidebar?type=dev)
+Attenzione: alla fine della verifica, **non** fermate o terminate l'istanza da voi generata perché mi servirà per la correzione!
 
-## Download and Installation
+Testate il vostro progetto il più spesso possibile per controllare che non sia corretto.
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/simple-sidebar/)
-* Install via npm: `npm i startbootstrap-simple-sidebar`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-simple-sidebar.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar)
+**È possibile** consultare w3school o altri siti di esempio.
 
-## Usage
+Al contrario, **non è possibile** comunicare o copiare dai compagni di classe.
 
-### Basic Usage
+Almeno 5 minuti prima della fine verifica, fate il commit e push di tutte le modifiche in locale. Consigliamo comunque di fare commit e push molto spesso durante la verifica (anche ogni 10 minuti), per evitare di perdere punti.
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+# Calcolo del punteggio
+Tutte le seguenti voci valgono **1 punto**.
+Voto massimo: 9.
+Per avere il massimo del voto bisogna avere il massimo del punteggio.
 
-### Advanced Usage
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+## Punti generali
+- [ ] corretta indentazione di tutti i file
+- [ ] codice che compila senza errori nella console del browser
 
-You must have npm and Gulp installed globally on your machine in order to use these features.
+## Parte prima: AWS
+- [ ] creare una istanza Amazon Linux 2
+- [ ] creare una istanza del tipo xxx
+- [ ] aprire le porte xxx
+- [ ] configurare l'istanza con nginx
+- [ ] pagina di default nginx correttamente visulizzata nel browser
 
-## Bugs and Issues
+## Parte seconda: sviluppo web in locale
+- [ ] menu a sinistra con voci corrette
+- [ ] intestazione della pagina corretta
+- [ ] creazione di una card con il titolo
+- [ ] slidebar/bottoni all'interno della card
+- [ ] creazione corretta di tutte e cinque le card
+- [ ] stampare sulla console del browser il valore della slidebar o quando il bottone premuto
+- [ ] fare due screenshots e caricarli su git
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/simple-sidebar/).
 
-## About
+## Parte terza: deploy
+- [ ] download del progetto web sull'istanza
+- [ ] corretto deploy del sito nell'istanza
+- [ ] pagina visualizzabile da browser con dns pubblico
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/gh-pages/LICENSE) license.
