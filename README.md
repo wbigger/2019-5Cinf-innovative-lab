@@ -50,11 +50,11 @@ Per avere il massimo del voto bisogna avere il massimo del punteggio.
 - [ ] codice che compila senza errori nella console del browser
 
 ### Parte prima: AWS
-- [ ] creare una istanza Amazon Linux 2 con architettura x86 a 64 bit
-- [ ] creare una istanza per uso generale, che abbia almeno 2GB di RAM e senza particolari requisiti per la CPU, lo storage e le prestazioni di rete
-- [ ] configurare l'istanza in modo da accettare chiamate HTTP, HTTPS e MYSQL
-- [ ] connettersi all'istanza e configurare il web server nginx
-- [ ] la pagina di default del web server è correttamente visulizzata nel browser del proprio computer di sviluppo
+- [x] creare una istanza Amazon Linux 2 con architettura x86 a 64 bit
+- [x] creare una istanza per uso generale, che abbia almeno 2GB di RAM e senza particolari requisiti per la CPU, lo storage e le prestazioni di rete
+- [x] configurare l'istanza in modo da accettare chiamate HTTP, HTTPS e MYSQL
+- [x] connettersi all'istanza e configurare il web server nginx
+- [x] la pagina di default del web server è correttamente visulizzata nel browser del proprio computer di sviluppo
 
 ### Parte seconda: sviluppo web in locale
 - [ ] modifica del titolo della pagina in "Innovative Lab - Marconi Civitavecchia"
