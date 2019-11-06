@@ -57,9 +57,9 @@ Per avere il massimo del voto bisogna avere il massimo del punteggio.
 - [x] la pagina di default del web server è correttamente visulizzata nel browser del proprio computer di sviluppo
 
 ### Parte seconda: sviluppo web in locale
-- [ ] modifica del titolo della pagina in "Innovative Lab - Marconi Civitavecchia"
-- [ ] menu a sinistra con voci corrette
-- [ ] intestazione della pagina corretta
+- [x] modifica del titolo della pagina in "Innovative Lab - Marconi Civitavecchia"
+- [x] menu a sinistra con voci corrette
+- [x] intestazione della pagina corretta
 - [ ] creazione di una card con il titolo corretto
 - [ ] slidebar/bottoni all'interno della card
 - [ ] creazione corretta di tutte e cinque le card
