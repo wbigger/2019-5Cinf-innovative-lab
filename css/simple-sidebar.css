@@ -23,6 +23,7 @@ body {
 
 #sidebar-wrapper .list-group {
   width: 15rem;
+  text-align: center;
 }
 
 #page-content-wrapper {
