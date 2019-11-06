@@ -17,9 +17,50 @@
   <link href="css/simple-sidebar.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
+  <style>
+    .slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+  </style>
 </head>
 
 <body>
+  
 
   <div class="d-flex" id="wrapper">
 
@@ -33,7 +74,7 @@
         <a href="#" class="list-group-item list-group-item-action bg-light">Internet Access</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Room Temperature</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Break Area</a>
-        
+
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -54,13 +95,50 @@
 
 
       <div id="section-home" class="container-fluid tab-content">
-        <h1 class="mt-4">Home</h1>
-        <p>Welcome to the Innovative Teaching Lab!</p>
+        <h1 class="mt-4">Lighting Enviroments</h1>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Presentation Area</h5>
+              <p class="card-text">Light Intensity</p>
+              <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Workshop Area</h5>
+              <p class="card-text">Light Intensity</p>
+              <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Maker Area</h5>
+              <p class="card-text">Light Intensity</p>
+              <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Vr Area</h5>
+              <p class="card-text">Light Intensity</p>
+              <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Hint by prof: other sections here ...-->
       <!-- Please pay attention to the div id, it has to match with the href in the link -->
-      
+
     </div>
     <!-- /#page-content-wrapper -->
 
