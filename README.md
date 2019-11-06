@@ -41,7 +41,7 @@ Almeno 5 minuti prima della fine verifica, fate il commit e push di tutte le mod
 
 ## Calcolo del punteggio
 Tutte le seguenti voci valgono **1 punto**.
-Voto massimo: 9.
+Voto massimo: 10.
 Per avere il massimo del voto bisogna avere il massimo del punteggio.
 
 
