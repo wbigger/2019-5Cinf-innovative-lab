@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>TITOLO PAGINA</title>
+  <title>Laboratorio didattica innovativa - G. Marconi Civitavecchia</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,14 +25,14 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">ABC</div>
+      <div class="sidebar-heading">Innovative Teaching Lab</div>
       <div class="list-group list-group-flush">
         <a href="#section-home" class="list-group-item list-group-item-action bg-light">Home</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">bla</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">ble</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">bli</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">blo</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">blu</a>
+        <a href="#section-lighting" class="list-group-item list-group-item-action bg-light">Lighting environments</a>
+        <a href="#section-borrow" class="list-group-item list-group-item-action bg-light">Borrow material</a>
+        <a href="#section-internet" class="list-group-item list-group-item-action bg-light">Internet access</a>
+        <a href="#section-temperature" class="list-group-item list-group-item-action bg-light">Room temperature</a>
+        <a href="#section-break" class="list-group-item list-group-item-action bg-light">Break Area</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -51,15 +51,126 @@
 
       </nav>
 
-
       <div id="section-home" class="container-fluid tab-content">
         <h1 class="mt-4">Home</h1>
         <p>Welcome to the Innovative Teaching Lab!</p>
       </div>
 
-      <!-- Hint by prof: other sections here ...-->
-      <!-- Please pay attention to the div id, it has to match with the href in the link -->
-      
+      <div id="section-lighting" class="container-fluid tab-content">
+        <h1 class="mt-4">Lighting environments</h1>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Presentation area</a>
+                </h4>
+                <label for="presentation-light-range">Lights intensity</label>
+                <input type="range" class="light-range" id="presentation-light-range">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Workshop area</a>
+                </h4>
+                <label for="workshop-light-range">Lights intensity</label>
+                <input type="range" class="light-range" id="workshop-light-range">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Maker area</a>
+                </h4>
+                <label for="maker-light-range">Lights intensity</label>
+                <input type="range" class="light-range" id="maker-light-range">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">VR Area</a>
+                </h4>
+                <label for="vr-light-range">Lights intensity</label>
+                <input type="range" class="light-range" id="vr-light-range">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="section-borrow" class="container-fluid tab-content">
+        <h1 class="mt-4">Borrow material</h1>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Arduino</a>
+                </h4>
+                <button type="button" class="btn btn-primary">Check-in</button>
+                <button type="button" class="btn btn-secondary">Check-out</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Raspberry</a>
+                </h4>
+                <button type="button" class="btn btn-primary">Check-in</button>
+                <button type="button" class="btn btn-secondary">Check-out</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Laptops</a>
+                </h4>
+                <button type="button" class="btn btn-primary">Check-in</button>
+                <button type="button" class="btn btn-secondary">Check-out</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Spare parts</a>
+                </h4>
+                <button type="button" class="btn btn-primary">Check-in</button>
+                <button type="button" class="btn btn-secondary">Check-out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section-internet" class="container-fluid tab-content">
+        <h1 class="mt-4">Internet access</h1>
+        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on
+          larger screens. When toggled using the button below, the menu will change.</p>
+        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional,
+          and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the
+          menu when clicked.</p>
+      </div>
+      <div id="section-temperature" class="container-fluid tab-content">
+        <h1 class="mt-4">Room temperature</h1>
+        <p>Something here to manage the room temperature.</p>
+      </div>
+      <div id="section-break" class="container-fluid tab-content">
+        <h1 class="mt-4">Break area</h1>
+        <p>Something here to manage the break area.</p>
+      </div>
     </div>
     <!-- /#page-content-wrapper -->
 
