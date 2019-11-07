@@ -46,15 +46,15 @@ Per avere il massimo del voto bisogna avere il massimo del punteggio.
 
 
 ### Punti generali
-- [ ] corretta indentazione di tutti i file
-- [ ] codice che compila senza errori nella console del browser
+- [X] corretta indentazione di tutti i file
+- [X] codice che compila senza errori nella console del browser
 
 ### Parte prima: AWS
-- [ ] creare una istanza Amazon Linux 2 con architettura x86 a 64 bit
-- [ ] creare una istanza per uso generale, che abbia almeno 2GB di RAM e senza particolari requisiti per la CPU, lo storage e le prestazioni di rete
-- [ ] configurare l'istanza in modo da accettare chiamate HTTP, HTTPS e MYSQL
-- [ ] connettersi all'istanza e configurare il web server nginx
-- [ ] la pagina di default del web server è correttamente visulizzata nel browser del proprio computer di sviluppo
+- [X] creare una istanza Amazon Linux 2 con architettura x86 a 64 bit
+- [X] creare una istanza per uso generale, che abbia almeno 2GB di RAM e senza particolari requisiti per la CPU, lo storage e le prestazioni di rete
+- [X] configurare l'istanza in modo da accettare chiamate HTTP, HTTPS e MYSQL
+- [X] connettersi all'istanza e configurare il web server nginx
+- [X] la pagina di default del web server è correttamente visulizzata nel browser del proprio computer di sviluppo
 
 ### Parte seconda: sviluppo web in locale
 - [ ] modifica del titolo della pagina in "Innovative Lab - Marconi Civitavecchia"
@@ -69,8 +69,8 @@ Per avere il massimo del voto bisogna avere il massimo del punteggio.
 
 
 ### Parte terza: deploy
-- [ ] download del progetto web sull'istanza
-- [ ] corretto deploy del sito nell'istanza
-- [ ] pagina visualizzabile da browser con dns pubblico
+- [X] download del progetto web sull'istanza
+- [X] corretto deploy del sito nell'istanza
+- [X] pagina visualizzabile da browser con dns pubblico
 
 
