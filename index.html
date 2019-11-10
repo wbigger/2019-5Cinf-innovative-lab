@@ -187,6 +187,12 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
+    
+    sliderPrint = function () {
+        //output.innerHTML = this.value;
+        // PROF: in realtà sarebbe dovuto essere
+        console.log(`Il valore dello slides ${this.id} è: ${this.value}`);
+      }
 
     $(document).ready(function () {
       $('.nav ul li:first').addClass('active');
@@ -201,6 +207,11 @@
         $(content).show();
         $(content).siblings('.tab-content').hide();
       });
+
+      document.getElementById("presentation-light-range").oninput = sliderPrint;
+      document.getElementById("workshop-light-range").oninput = sliderPrint;
+      document.getElementById("maker-light-range").oninput = sliderPrint;
+      document.getElementById("vr-light-range").oninput = sliderPrint;
     });
   </script>
 
