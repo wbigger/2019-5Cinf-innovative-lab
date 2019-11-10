@@ -46,8 +46,8 @@ Per avere il massimo del voto bisogna avere il massimo del punteggio.
 
 
 ### Punti generali
-- [ ] corretta indentazione di tutti i file
-- [ ] codice che compila senza errori nella console del browser
+- [X] corretta indentazione di tutti i file
+- [X] codice che compila senza errori nella console del browser
 
 ### Parte prima: AWS
 - [x] creare una istanza Amazon Linux 2 con architettura x86 a 64 bit
@@ -69,8 +69,8 @@ Per avere il massimo del voto bisogna avere il massimo del punteggio.
 
 
 ### Parte terza: deploy
-- [ ] download del progetto web sull'istanza
-- [ ] corretto deploy del sito nell'istanza
-- [ ] pagina visualizzabile da browser con dns pubblico
+- [X] download del progetto web sull'istanza
+- [X] corretto deploy del sito nell'istanza
+- [X] pagina visualizzabile da browser con dns pubblico
 
 
