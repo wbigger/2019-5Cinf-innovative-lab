@@ -19,7 +19,7 @@
   <style>
     .div2 {
       width: 300px;
-      height: 150px;  
+      height: 150px;
       border: 1px solid;
     }
 
@@ -28,40 +28,41 @@
       height: 100px;
       border: 1px solid;
     }
+
     .slidecontainer {
-  width: 100%;
-}
+      width: 100%;
+    }
 
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 25px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 25px;
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
 
-.slider:hover {
-  opacity: 1;
-}
+    .slider:hover {
+      opacity: 1;
+    }
 
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #4CAF50;
-  cursor: pointer;
-}
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background: #4CAF50;
+      cursor: pointer;
+    }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #4CAF50;
-  cursor: pointer;
-}
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      background: #4CAF50;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -100,21 +101,35 @@
 
       <div id="section-home" class="container-fluid tab-content">
         <h1 class="mt-4">Lighting environments</h1>
-        
-        <br>
-        <div class="div2">PRESENTATION AREA
-          
-            <p>lights intensity</p>
-            
+
+        <!-- <br> PROF: per favore non usare br per fare layout... mi fa venire i <br>ividi!!-->
+        <div class="div2">Presentation area
+          <p>lights intensity</p>
           <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-            <p>Value: <span id="demo"></span></p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="presentationRange">
           </div>
         </div>
-        <br> <br>
-        <div class="div3">VR AREA</div>
-        
-        
+        <!-- <br> <br> PROF: doppi brividi-->
+        <div class="div2">Workshop area
+          <p>lights intensity</p>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="wsRange">
+          </div>
+        </div>
+        <div class="div2">Maker area
+          <p>lights intensity</p>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="makerRange">
+          </div>
+        </div>
+        <div class="div2">VR area
+          <p>lights intensity</p>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="vrRange">
+          </div>
+        </div>
+
+
       </div>
 
       <!-- Hint by prof: other sections here ...-->
@@ -151,13 +166,23 @@
         $(content).siblings('.tab-content').hide();
       });
     });
-    var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+    printFunction = function () {
+      //output.innerHTML = this.value;
+      // PROF: in realtà sarebbe dovuto essere
+      console.log(`Il valore dello slides ${this.id} è: ${this.value}`);
+    } 
+    var slider = document.getElementById("presentationRange");
+    // var output = document.getElementById("demo");
+    //output.innerHTML = slider.value;
+    slider.oninput = printFunction;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+    // PROF: soluzione più compatta:
+    document.getElementById("wsRange").oninput = printFunction;
+    document.getElementById("makerRange").oninput = printFunction;
+    document.getElementById("vrRange").oninput = printFunction;
+
+    // e poi tutto questo andrebbe dentro $(docuement).ready
+
   </script>
 
 </body>
