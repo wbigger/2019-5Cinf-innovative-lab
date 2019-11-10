@@ -64,68 +64,68 @@
             </div>
           </div>
           <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">RASPBERRY</h5>
-                <div><button type="button" class="btn btn-primary">CHECK-IN</button></div>
+            <div class="card-body">
+              <h5 class="card-title">RASPBERRY</h5>
+              <div><button type="button" class="btn btn-primary">CHECK-IN</button></div>
               <p></p>
               <div><button type="button" class="btn btn-primary">CHECK-OUT</button></div>
-              </div>
-        </div>
-        <div class="card">
+            </div>
+          </div>
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">LAPTOPS</h5>
               <div><button type="button" class="btn btn-primary">CHECK-IN</button></div>
               <p></p>
               <div><button type="button" class="btn btn-primary">CHECK-OUT</button></div>
             </div>
-           
-      </div>
-      <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">SPARE PARTS</h5>
-            <div><button type="button" class="btn btn-primary">CHECK-IN</button></div>
+
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">SPARE PARTS</h5>
+              <div><button type="button" class="btn btn-primary">CHECK-IN</button></div>
               <p></p>
               <div><button type="button" class="btn btn-primary">CHECK-OUT</button></div>
+            </div>
           </div>
+
+
+
+          <!-- Hint by prof: other sections here ...-->
+          <!-- Please pay attention to the div id, it has to match with the href in the link -->
+
         </div>
+        <!-- /#page-content-wrapper -->
 
+      </div>
+      <!-- /#wrapper -->
 
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      <!-- Hint by prof: other sections here ...-->
-      <!-- Please pay attention to the div id, it has to match with the href in the link -->
+      <!-- Menu Toggle Script -->
+      <script>
+        $("#menu-toggle").click(function (e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
 
-    </div>
-    <!-- /#page-content-wrapper -->
-
-  </div>
-  <!-- /#wrapper -->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function (e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-
-    $(document).ready(function () {
-      $('.nav ul li:first').addClass('active');
-      $('.tab-content:not(:first)').hide();
-      console.log("start");
-      $('.list-group a').click(function (event) {
-        event.preventDefault();
-        var content = $(this).attr('href');
-        console.log("click" + content);
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-        $(content).show();
-        $(content).siblings('.tab-content').hide();
-      });
-    });
-  </script>
+        $(document).ready(function () {
+          $('.nav ul li:first').addClass('active');
+          $('.tab-content:not(:first)').hide();
+          console.log("start");
+          $('.list-group a').click(function (event) {
+            event.preventDefault();
+            var content = $(this).attr('href');
+            console.log("click" + content);
+            $(this).parent().addClass('active');
+            $(this).parent().siblings().removeClass('active');
+            $(content).show();
+            $(content).siblings('.tab-content').hide();
+          });
+        });
+      </script>
 
 </body>
 
