@@ -46,31 +46,31 @@ Per avere il massimo del voto bisogna avere il massimo del punteggio.
 
 
 ### Punti generali
-- [ ] corretta indentazione di tutti i file
-- [ ] codice che compila senza errori nella console del browser
+- [X] corretta indentazione di tutti i file
+- [X] codice che compila senza errori nella console del browser
 
 ### Parte prima: AWS
-- [ ] creare una istanza Amazon Linux 2 con architettura x86 a 64 bit
-- [ ] creare una istanza per uso generale, che abbia almeno 2GB di RAM e senza particolari requisiti per la CPU, lo storage e le prestazioni di rete
-- [ ] configurare l'istanza in modo da accettare chiamate HTTP, HTTPS e MYSQL
-- [ ] connettersi all'istanza e configurare il web server nginx
-- [ ] la pagina di default del web server è correttamente visulizzata nel browser del proprio computer di sviluppo
+- [x] creare una istanza Amazon Linux 2 con architettura x86 a 64 bit
+- [x] creare una istanza per uso generale, che abbia almeno 2GB di RAM e senza particolari requisiti per la CPU, lo storage e le prestazioni di rete
+- [x] configurare l'istanza in modo da accettare chiamate HTTP, HTTPS e MYSQL
+- [x] connettersi all'istanza e configurare il web server nginx
+- [x] la pagina di default del web server è correttamente visulizzata nel browser del proprio computer di sviluppo
 
 ### Parte seconda: sviluppo web in locale
-- [ ] modifica del titolo della pagina in "Innovative Lab - Marconi Civitavecchia"
-- [ ] menu a sinistra con voci corrette
-- [ ] intestazione della pagina corretta
-- [ ] creazione di una card con il titolo corretto
-- [ ] slidebar/bottoni all'interno della card
-- [ ] creazione corretta di tutte e cinque le card
+- [x] modifica del titolo della pagina in "Innovative Lab - Marconi Civitavecchia"
+- [x] menu a sinistra con voci corrette
+- [x] intestazione della pagina corretta
+- [x] creazione di una card con il titolo corretto
+- [x] slidebar/bottoni all'interno della card
+- [x] creazione corretta di tutte e cinque le card
 - [ ] stampare sulla console del browser il valore della slidebar o quando il bottone premuto
-- [ ] crezione di due screenshots, uno per desktop e uno per smartphone, e caricaramento su git
-- [ ] corretta capitalizzazione di tutti i testi
+- [x] crezione di due screenshots, uno per desktop e uno per smartphone, e caricaramento su git
+- [x] corretta capitalizzazione di tutti i testi
 
 
 ### Parte terza: deploy
-- [ ] download del progetto web sull'istanza
-- [ ] corretto deploy del sito nell'istanza
-- [ ] pagina visualizzabile da browser con dns pubblico
+- [x] download del progetto web sull'istanza
+- [x] corretto deploy del sito nell'istanza
+- [x] pagina visualizzabile da browser con dns pubblico
 
 
