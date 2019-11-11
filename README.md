@@ -60,12 +60,12 @@ Per avere il massimo del voto bisogna avere il massimo del punteggio.
 - [x] modifica del titolo della pagina in "Innovative Lab - Marconi Civitavecchia"
 - [x] menu a sinistra con voci corrette
 - [x] intestazione della pagina corretta
-- [ ] creazione di una card con il titolo corretto
-- [ ] slidebar/bottoni all'interno della card
+- [X] creazione di una card con il titolo corretto
+- [X] slidebar/bottoni all'interno della card
 - [ ] creazione corretta di tutte e cinque le card
 - [ ] stampare sulla console del browser il valore della slidebar o quando il bottone premuto
 - [ ] crezione di due screenshots, uno per desktop e uno per smartphone, e caricaramento su git
-- [ ] corretta capitalizzazione di tutti i testi
+- [X] corretta capitalizzazione di tutti i testi
 
 
 ### Parte terza: deploy

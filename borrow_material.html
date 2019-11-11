@@ -106,7 +106,7 @@
       $('.tab-content:not(:first)').hide();
       console.log("start");
       $('.list-group a').click(function (event) {
-        event.preventDefault();
+        //event.preventDefault();
         var content = $(this).attr('href');
         console.log("click" + content);
         $(this).parent().addClass('active');
