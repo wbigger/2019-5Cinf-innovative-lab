@@ -1,76 +1,43 @@
-# VERIFICA TPSI: AWS, HTML5, deploy
+# Innovative Lab
 
-Benvenuti alla verifica scritta di TPSI. Buon lavoro!
+This is the repository for the new Innovative Lab of IIS G. Marconi, Civitavecchia.
 
-## Panoramica del compito
-Il compito è diviso in tre fasi:
-1. avvio di una macchina EC2 su AWS
-1. modifica di una pagina web in locale
-1. deploy della pagina web sull'istanza EC2
+Preferred editor: VS Code.
 
-Ci sono due file che differiscono unicamente per il wireframe che dovrà essere implementato nella seconda parte del compito:
-- FILA A: https://wireframe.cc/pro/pp/9ec31bf6e287392
-- FILA B: https://wireframe.cc/pro/pp/4b8694764287397
+See also [this doc](https://docs.google.com/document/d/1jmqQJLx6FoIjivqpaGArWUZxyqoeGmkUqydpuCeI0jY/edit?usp=sharing) (ITA) that contains a simulation of a hypothetical State Certification Exam.
 
+## Project Description
+### Brief
+To encourage the best learning practices for Italian high school students, the Italian Ministry of University and Research intends to promote the renewal of laboratories in schools, equipping them with innovative technological resources and adequate furnishings, in order to enable new teaching methods (group work, flipped classroom, etc.).
 
-## Operazioni preliminari
-Accesso ad AWS:
-- accedete alla [pagina di login](https://www.awseducate.com/signin/SiteLogin) di AWS Educate
-- quando create una nuova istanza, **create una nuova chiave** con il nome **cognome-verifica**; questa chiave dovete metterla sotto revisione su github in modo che io possa accedere alla vostra istanza!
-- per le operazioni di configurazione potete usare gli appunti a [questo](https://github.com/wbigger/tpsi-5y/) indirizzo
+To this end, we intend to build an automation infrastructure that allows us to simplify some operations, inspired by Industry 4.0.
 
-Sviluppo web locale:
-- accedete con il vostro account personale a GitHub (**non sbagliate password!**)
-- fate il fork di questo progetto, ma **attenzione**: se vi viene chiesto, fate il fork sul vostro account personale e non sull'organizzazione del progetto di classe
-- copiate l'URL del **vostro** progetto
-- aprite Visual Studio Code
-- fate il clone del progetto
-- premete sul pulsante "Go Live" nella barra blu in basso
-- a questo punto avete la pagina di riferimento aperta sul vostro browser e potete cominciare lo sviluppo
+### Details
+The environment must include the following functional areas:
+- workshops, where users can use laptops or write on sheets of paper, billboards and the like
+- presentation, in which users can project on the blackboard and the public can listen
+- maker, equipped with welders, Arduino, Raspberry PI, components, 3D printer, etc.
+- virtual reality, equipped with workstations with viewers to enjoy immersive technologies such as Oculus
 
-## Note
-Attenzione: alla fine della verifica, **non** fermate o terminate l'istanza da voi generata perché mi servirà per la correzione!
+For the management of the new laboratory, a website has to be implemented with following features:
+- management of environmental lights, independently for each area
+- management of borrowing of work material (eg Arduino, Raspberry PI, etc)
+- enabling and disabling the internet, independently for the workshop area, the VR area or the entire laboratory
+- temperature management, also based on the outside temperature and time intervals
+- enabling and disabling a small break area with a coffee machine connected to the network.
 
-Testate il vostro progetto il più spesso possibile per controllare che non sia corretto.
+We also want to provide the following services to students and teachers within the laboratory:
+- device for voice commands for lighting and temperature regulation
+- streaming video and audio service between stations, to allow real-time collaboration between people even in different areas of the environment, without disturbing others
 
-**È possibile** consultare w3school o altri siti di esempio.
+## Implementation
+The website will be realized with a 3-tiers architecture:
+- website
+- backend
+- MySQL database
 
-Al contrario, **non è possibile** comunicare o copiare dai compagni di classe.
-
-Almeno 5 minuti prima della fine verifica, fate il commit e push di tutte le modifiche in locale. Consigliamo comunque di fare commit e push molto spesso durante la verifica (anche ogni 10 minuti), per evitare di perdere punti.
-
-## Calcolo del punteggio
-Tutte le seguenti voci valgono **1 punto**.
-Voto massimo: 10.
-Per avere il massimo del voto bisogna avere il massimo del punteggio.
+The project will rely on the AWS services, since we can take advantage of AWS Educate.
 
 
-### Punti generali
-- [ ] corretta indentazione di tutti i file
-- [ ] codice che compila senza errori nella console del browser
-
-### Parte prima: AWS
-- [ ] creare una istanza Amazon Linux 2 con architettura x86 a 64 bit
-- [ ] creare una istanza per uso generale, che abbia almeno 2GB di RAM e senza particolari requisiti per la CPU, lo storage e le prestazioni di rete
-- [ ] configurare l'istanza in modo da accettare chiamate HTTP, HTTPS e MYSQL
-- [ ] connettersi all'istanza e configurare il web server nginx
-- [ ] la pagina di default del web server è correttamente visulizzata nel browser del proprio computer di sviluppo
-
-### Parte seconda: sviluppo web in locale
-- [ ] modifica del titolo della pagina in "Innovative Lab - Marconi Civitavecchia"
-- [ ] menu a sinistra con voci corrette
-- [ ] intestazione della pagina corretta
-- [ ] creazione di una card con il titolo corretto
-- [ ] slidebar/bottoni all'interno della card
-- [ ] creazione corretta di tutte e cinque le card
-- [ ] stampare sulla console del browser il valore della slidebar o quando il bottone premuto
-- [ ] crezione di due screenshots, uno per desktop e uno per smartphone, e caricaramento su git
-- [ ] corretta capitalizzazione di tutti i testi
-
-
-### Parte terza: deploy
-- [ ] download del progetto web sull'istanza
-- [ ] corretto deploy del sito nell'istanza
-- [ ] pagina visualizzabile da browser con dns pubblico
-
-
+## Assignments
+- [Assignment 1](./assignments/assignment-1.md)
