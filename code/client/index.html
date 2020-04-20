@@ -115,6 +115,7 @@
                 <h4 class="card-title">
                   <a href="#">Arduino</a>
                 </h4>
+                <img src="https://5cinf-labmarconi.s3-us-west-1.amazonaws.com/arduino_uno.png" alt="product logo">
                 <button type="button" class="btn btn-primary">Check-in</button>
                 <button type="button" class="btn btn-secondary">Check-out</button>
               </div>
@@ -126,28 +127,7 @@
                 <h4 class="card-title">
                   <a href="#">Raspberry</a>
                 </h4>
-                <button type="button" class="btn btn-primary">Check-in</button>
-                <button type="button" class="btn btn-secondary">Check-out</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Laptops</a>
-                </h4>
-                <button type="button" class="btn btn-primary">Check-in</button>
-                <button type="button" class="btn btn-secondary">Check-out</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Spare parts</a>
-                </h4>
+                <img src="https://5cinf-labmarconi.s3-us-west-1.amazonaws.com/raspberry.png" alt="product image">
                 <button type="button" class="btn btn-primary">Check-in</button>
                 <button type="button" class="btn btn-secondary">Check-out</button>
               </div>
@@ -182,12 +162,12 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-    
+
     sliderPrint = function () {
-        //output.innerHTML = this.value;
-        // PROF: in realtà sarebbe dovuto essere
-        console.log(`Il valore dello slides ${this.id} è: ${this.value}`);
-      }
+      //output.innerHTML = this.value;
+      // PROF: in realtà sarebbe dovuto essere
+      console.log(`Il valore dello slides ${this.id} è: ${this.value}`);
+    }
 
     $(document).ready(function () {
       $('.nav ul li:first').addClass('active');
